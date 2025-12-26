@@ -396,8 +396,9 @@ def run(show_plots, orbitCase, useSphericalHarmonics, planetCase):
     # To enable this, uncomment this line:
 
     viz = vizSupport.enableUnityVisualization(scSim, simTaskName, scObject,
-                                              # saveFile=__file__
-                                              # liveStream=True
+                                              saveFile=__file__,
+                                              liveStream=True,
+                                              streamPort=5557,
                                               )
 
     # The vizInterface module must be built into BSK.  This is done if the correct CMake options are selected.
